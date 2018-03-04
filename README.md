@@ -1,4 +1,35 @@
-# Dashboard
+# The Test
+
+## Introduction
+
+This repo is a small Angular 5 web app that connects to a node service via web sockets. However, I’ve not included the node service in this repo.
+
+## The Task
+
+The task is to write one or more small node.js service that, alone or together, provide messages to the web app.  
+
+## Requirements
+
+1.	The web app is expecting messages from the node service (real-time) so it can display them in a dashboard.
+2.	The service should be written to listen on a local IP and port 8181.
+3.	The messages are expected to just be samples, not real data.
+4.	The format of the messages can be gleaned from the code in the web app. This will require some investigation on your part and will help me ascertain your knowledge of a modern Angular app.
+5.	There should not be any changes needed in the web app, but if you do make some it’s no problem. You can cleanup any UI pieces that you don’t like, etc.
+
+## Resources
+
+1.	You can use whatever tools you have in order to learn the technologies during or prior to completing this.
+
+## Deliverables
+
+1.	One or more node.js services in the /services folder that provide messages in a particular format for other clients to consume.
+2.	A functioning client-server app that simply exhibits the flow of messages via the existing dashboard.
+3. Submit a pull-request to GitHub with your changes.
+
+
+# Some Angular CLI info:
+
+## Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
