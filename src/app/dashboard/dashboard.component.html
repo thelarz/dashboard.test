@@ -1,0 +1,20 @@
+
+<h1>
+  Shelf Bag Counter
+</h1>
+
+<div class="shelf" *ngFor="let shelf of shelves">
+  <div>
+    <div class="device">
+      <label>Shelf Id</label><span>{{shelf.device}}</span>
+    </div>
+    <div class="stats">
+      <label>Shelf Capacity</label><span>{{shelf.capacity}}</span>
+      <label>Package Depth</label><span>{{shelf.packageDepth}}</span>
+      <label>Packages on Shelf</label><span>{{shelf.onShelf}}</span>
+    </div>
+    <div class="package" *ngFor="let item of shelf.capacityAsArray(); let i = index">
+      <img *ngIf="i < shelf.onShelf" src="../assets/images/fritos.jpg" />
+    </div>
+  </div>
+</div>
