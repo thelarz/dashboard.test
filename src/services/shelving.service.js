@@ -5,16 +5,16 @@ const http = require("http");
 var messageCount = Math.floor(Math.random() * 51);
 var shelfMessages = [];
 for (i = 0; i < messageCount; i++) {
-  var randomCapaicity = (Math.floor(Math.random() * 15));
-  var randomPackageDepth = (Math.floor(Math.random() * (randomCapaicity + 1)));
+  var randomCapacity = (Math.floor(Math.random() * 15));
+  var randomPackageDepth = (Math.floor(Math.random() * (randomCapacity + 1)));
 
   var msg = {
     type: "shelf-stat",
     device: (Math.floor(Math.random() * 8) + "Fritos " + (Math.floor(Math.random() * 15))),
     date: Date.now(),
-    capacity: randomCapaicity,
+    capacity: randomCapacity,
     packageDepth: randomPackageDepth,
-    onShelf: ((Math.floor(Math.random() * randomCapaicity)).toString())
+    onShelf: ((Math.floor(Math.random() * randomCapacity)).toString())
   };
   shelfMessages.push(msg);
 }
