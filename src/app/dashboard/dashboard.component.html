@@ -9,12 +9,14 @@
       <label>Shelf Id</label><span>{{shelf.device}}</span>
     </div>
     <div class="stats">
-      <label>Shelf Capacity</label><span>{{shelf.capacity}}</span>
-      <label>Package Depth</label><span>{{shelf.packageDepth}}</span>
-      <label>Packages on Shelf</label><span>{{shelf.onShelf}}</span>
+      <label>Shelf Capacity: </label><span id="capacity">{{shelf.capacity}}</span>
+      <label>Package Depth: </label><span id="depth">{{shelf.packageDepth}}</span>
+      <label>Packages on Shelf: </label><span id="onShelf">{{shelf.onShelf}}</span>
     </div>
     <div class="package" *ngFor="let item of shelf.capacityAsArray(); let i = index">
       <img *ngIf="i < shelf.onShelf" src="../assets/images/fritos.jpg" />
     </div>
   </div>
+  <br clear="all"/>
 </div>
+
