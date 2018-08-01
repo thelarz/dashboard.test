@@ -7,8 +7,8 @@ export class ShelfStat {
 
     capacityAsArray = () => {
         return new Array(this.capacity);
-    }
-    
+    };
+
     onShelfAsArray = () => {
         return new Array(this.onShelf);
     }
