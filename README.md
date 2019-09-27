@@ -6,7 +6,7 @@ This repo is a small Angular 5 web app that connects to a node service via web s
 
 ## The Task
 
-The task is to write one or more small node.js service that, alone or together, provide messages to the web app.  
+The task is to write one or more small node.js service(s) that, alone or together, provide messages to the web app.  
 
 ## Requirements
 
